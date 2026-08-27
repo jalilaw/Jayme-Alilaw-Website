@@ -31,7 +31,7 @@
       "@type": "Person",
       "@id": "https://jayme-alilaw.com/#person",
       "name": "Jayme Alilaw",
-      "email": "mailto:jayme@jayme-alilaw.com",
+      "email": "mailto:info@jayme-alilaw.com",
       "url": "https://jayme-alilaw.com/contact.html",
       "sameAs": [
         "https://www.linkedin.com/in/jaymealilaw/",
@@ -515,7 +515,7 @@ nav {
   <div class="contact-info fade-in">
     <div class="contact-info-block">
       <span class="contact-label">Email</span>
-      <a href="mailto:jayme@jayme-alilaw.com" class="contact-email">jayme@jayme-alilaw.com</a>
+      <a href="mailto:info@jayme-alilaw.com" class="contact-email">info@jayme-alilaw.com</a>
       <p class="contact-note">All inquiries — coaching, speaking, performance booking, press — come through this one address.</p>
     </div>
 
@@ -540,15 +540,20 @@ nav {
     </div>
   </div>
 
-  <form class="contact-form fade-in">
+  <form id="contact-form" class="contact-form fade-in" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact"/>
+    <p style="position:absolute; left:-9999px;" aria-hidden="true">
+      <label>Leave this field blank: <input name="bot-field"/></label>
+    </p>
+
     <div class="form-row">
       <div class="form-group">
         <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Full name"/>
+        <input type="text" id="name" name="name" placeholder="Full name" required/>
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="your@email.com"/>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required/>
       </div>
     </div>
 
@@ -566,11 +571,12 @@ nav {
 
     <div class="form-group">
       <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Tell me a bit about what you're looking for..."></textarea>
+      <textarea id="message" name="message" placeholder="Tell me a bit about what you're looking for..." required></textarea>
     </div>
 
     <button type="submit" class="btn btn-gold" style="border:none; cursor:pointer; width:100%;">Send Message</button>
-    <p class="form-submit-note">Prefer email directly? Reach out any time at <a href="mailto:jayme@jayme-alilaw.com">jayme@jayme-alilaw.com</a>.</p>
+    <p class="form-submit-note">Prefer email directly? Reach out any time at <a href="mailto:info@jayme-alilaw.com">info@jayme-alilaw.com</a>.</p>
+    <p id="contact-form-status" class="form-submit-note" style="display:none; margin-top:1rem;"></p>
   </form>
 </section>
 
@@ -586,7 +592,7 @@ nav {
       </div>
       <p>Where voice, story, and spirit meet — on stage, in coaching, and in community.</p>
       <p style="margin-top:1rem;">
-        <a href="mailto:jayme@jayme-alilaw.com" style="color:var(--gold); text-decoration:none;">jayme@jayme-alilaw.com</a>
+        <a href="mailto:info@jayme-alilaw.com" style="color:var(--gold); text-decoration:none;">info@jayme-alilaw.com</a>
       </p>
     </div>
 
@@ -605,7 +611,7 @@ nav {
       <ul>
         <li><a href="jayme-alilaw-soprano.html">Jayme Alilaw, Soprano</a></li>
         <li><a href="the-resonant-voice.html">The Resonant Voice™</a></li>
-        <li><a href="mailto:jayme@jayme-alilaw.com">Email Inquiry</a></li>
+        <li><a href="mailto:info@jayme-alilaw.com">Email Inquiry</a></li>
       </ul>
     </div>
   </div>
@@ -621,6 +627,27 @@ const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+const contactForm = document.getElementById('contact-form');
+const contactStatus = document.getElementById('contact-form-status');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(contactForm);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
+    }).then(() => {
+      contactStatus.textContent = "Thank you — your message has been sent. I'll be in touch soon.";
+      contactStatus.style.display = 'block';
+      contactForm.reset();
+    }).catch(() => {
+      contactStatus.textContent = "Something went wrong sending your message. Please email info@jayme-alilaw.com directly.";
+      contactStatus.style.display = 'block';
+    });
+  });
+}
 </script>
 
 </body>
