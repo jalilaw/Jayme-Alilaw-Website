@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jayme-alilaw.com/sitemap.xml
