@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Performance | Jayme Alilaw</title>
+<meta name="description" content="Jayme Alilaw performs opera, concert repertoire, Spirituals and works by African American composers. Signature programs: Black Lilith Burlesque, Sang Ms. Jayme, and La Femme Noire: The Celebrated Woman."/>
+<link rel="canonical" href="https://jayme-alilaw.com/performance.html"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Jayme Alilaw"/>
+<meta property="og:title" content="Performance | Jayme Alilaw"/>
+<meta property="og:description" content="Opera, concert, Spirituals and new work by African American composers. Signature programs and recordings."/>
+<meta property="og:url" content="https://jayme-alilaw.com/performance.html"/>
+<meta property="og:image" content="https://jayme-alilaw.com/images/performance-hero.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Performance | Jayme Alilaw"/>
+<meta name="twitter:description" content="Opera, concert, Spirituals and new work by African American composers."/>
+<meta name="twitter:image" content="https://jayme-alilaw.com/images/performance-hero.jpg"/>
+
+<link rel="icon" href="images/brand/mask-gold.png" type="image/png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Performance | Jayme Alilaw",
+      "url": "https://jayme-alilaw.com/performance.html",
+      "isPartOf": { "@type": "WebSite", "url": "https://jayme-alilaw.com/" },
+      "about": { "@id": "https://jayme-alilaw.com/#person" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jayme-alilaw.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Performance", "item": "https://jayme-alilaw.com/performance.html" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  /* Jayme Alilaw brand system */
+  --gold: #b09048;
+  --gold-text: #7d6428;
+  --gold-tint: #efe4c8;
+  --gold-on-ink: #d3b463;
+  --cream: #f5ead8;
+  --surface: #f9f4ed;
+  --sage: #7a8a5e;
+  --sage-text: #56633f;
+  --sage-deep: #3d472b;
+  --sage-tint: #e1eecc;
+  --sage-on-ink: #aebf92;
+  --mauve: #8f6382;
+  --mauve-text: #714e68;
+  --mauve-deep: #5c3e55;
+  --mauve-tint: #ece0e9;
+  --mauve-on-ink: #b58fac;
+  --ink: #201e1d;
+  --ink-muted: #474238;
+  --ink-faint: #645c50;
+  --label: #82796a;
+  --on-ink: #dcd3c4;
+  --on-ink-label: #a99878;
+  --hairline: rgba(32,30,29,0.16);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Figtree', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: rgba(245,234,216,0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(32,30,29,0.22);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.nav-brand-mask { height: 32px; width: auto; display: block; }
+.nav-brand-wordmark { height: 16px; width: auto; display: block; }
+
+.nav-links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-links a {
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold-text); }
+.nav-links a.current { color: var(--gold-text); }
+
+/* hamburger */
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
+.hamburger span { display:block; width:24px; height:1px; background:var(--ink); transition:0.3s; }
+
+/* ── PAGE HEADER ── */
+.page-header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 12rem 4rem 6rem;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--cream) 45%, var(--gold-tint) 100%);
+}
+
+.page-header-photo {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 27%;
+  max-width: 420px;
+  z-index: 1;
+  border-left: 1px solid rgba(32,30,29,0.25);
+}
+.page-header-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--cream) 0%, transparent 30%);
+  z-index: 2;
+}
+.page-header-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+.page-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(245,234,216,1) 30%, rgba(245,234,216,0.5) 62%, transparent 100%);
+  z-index: 2;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 10;
+  max-width: 640px;
+}
+
+.page-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page-eyebrow::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.page-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 1.75rem;
+  max-width: 16ch;
+}
+.page-title em { color: var(--gold); font-style: italic; }
+
+.page-intro {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  max-width: 56ch;
+}
+
+/* ── OFFERINGS / DOORS ── */
+.offerings {
+  padding: 2rem 4rem 8rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.doors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.door {
+  background: var(--sage-tint);
+  border-radius: 16px;
+  padding: 2.75rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: 100px;
+}
+.door.door-mauve { background: var(--mauve-tint); }
+
+.door-number {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--gold-tint);
+  line-height: 1;
+  margin-bottom: -0.3rem;
+}
+
+.door-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--sage-deep);
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+.door-mauve .door-title { color: var(--mauve-deep); }
+
+.door-subtitle {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage-text);
+  margin-bottom: 1.6rem;
+  display: block;
+}
+.door-mauve .door-subtitle { color: var(--mauve-text); }
+
+.door p.door-desc {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: var(--ink-muted);
+  margin-bottom: 1.8rem;
+}
+
+.door-items {
+  list-style: none;
+  margin-bottom: 2.2rem;
+}
+.door-items li {
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--ink);
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.door-link {
+  margin-top: auto;
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sage-text);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: gap 0.2s;
+}
+.door-mauve .door-link { color: var(--mauve-text); }
+.door-link::after { content: '→'; font-size: 0.9rem; }
+.door-link:hover { gap: 1rem; }
+
+/* ── CLOSING CTA ── */
+.cta-band {
+  background: var(--ink);
+  border-radius: 16px;
+  padding: 5rem 4rem;
+  text-align: center;
+}
+.cta-band-inner { max-width: 640px; margin: 0 auto; }
+.cta-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-label);
+  margin-bottom: 1rem;
+}
+.cta-heading {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--gold-on-ink);
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
+}
+.cta-band .btn-gold {
+  background: var(--sage-on-ink);
+  color: var(--ink);
+}
+.cta-band .btn-gold:hover { background: var(--sage-tint); }
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-block;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+.btn-gold {
+  background: var(--sage);
+  color: var(--surface);
+}
+.btn-gold:hover { background: var(--sage-deep); }
+.btn-gold:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--hairline);
+  color: var(--ink);
+}
+.btn-outline:hover { border-color: var(--sage); color: var(--sage-text); }
+.btn-outline:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+
+/* ── FOOTER ── */
+.footer-section {
+  background: var(--ink);
+  padding: 5rem 4rem 3rem;
+  border-top: 1px solid rgba(211,180,99,0.18);
+  position: relative;
+  z-index: 10;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(220,211,196,0.1);
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: var(--on-ink);
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  max-width: 32ch;
+}
+
+.footer-col h4 {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-label);
+  margin-bottom: 1.5rem;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.8rem; }
+.footer-col ul a {
+  font-size: 0.9rem;
+  color: var(--on-ink);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col ul a:hover { color: var(--gold-on-ink); }
+
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom p {
+  font-size: 0.7rem;
+  color: rgba(220,211,196,0.35);
+  letter-spacing: 0.05em;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 960px) {
+  nav { padding: 1.2rem 2rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  .page-header { padding: 8rem 2rem 4rem; }
+  .page-header-photo { display: none; }
+  .page-header-overlay { background: none; }
+  .page-header-content { max-width: 100%; }
+  .offerings { padding: 1rem 2rem 5rem; }
+  .doors-grid { grid-template-columns: 1fr; }
+  .cta-band { padding: 4rem 2rem; }
+
+  .footer-top { grid-template-columns: 1fr; gap: 3rem; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  .footer-section { padding: 4rem 2rem 2.5rem; }
+}
+
+
+/* ── PERFORMANCE PAGE (In performance register: mauve) ── */
+.page-header.perf { background: linear-gradient(135deg, var(--surface) 0%, var(--cream) 45%, var(--mauve-tint) 100%); }
+.page-header.perf .page-eyebrow { color: var(--mauve-text); }
+.page-header.perf .page-eyebrow::before { background: var(--mauve); }
+.perf .btn-gold, .perf-section .btn-gold { background: var(--mauve); color: var(--surface); }
+.perf .btn-gold:hover, .perf-section .btn-gold:hover { background: var(--mauve-deep); }
+.perf .btn-gold:focus-visible, .perf-section .btn-gold:focus-visible { outline-color: var(--mauve); }
+.page-header-actions { margin-top: 2.25rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.page-header.perf .btn-outline:hover { border-color: var(--mauve); color: var(--mauve-text); }
+
+.perf-section { padding: 6rem 4rem; max-width: 1300px; margin: 0 auto; }
+.section-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--mauve-text); margin-bottom: 1rem;
+}
+.section-heading {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 500; line-height: 1.12;
+  color: var(--ink); margin-bottom: 2.5rem;
+}
+.section-heading em { color: var(--gold); font-style: italic; }
+
+.bio-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 5rem; align-items: start; }
+.bio-text p { font-size: 1.05rem; color: var(--ink-muted); line-height: 1.85; margin-bottom: 1.4rem; max-width: 62ch; }
+.stats { display: grid; gap: 14px; }
+.stat {
+  background: var(--mauve-tint); border-radius: 16px; padding: 1.75rem 2rem;
+}
+.stat-num { display: block; font-family: 'Bodoni Moda', serif; font-size: 2.6rem; font-weight: 500; color: var(--mauve-deep); line-height: 1; margin-bottom: 0.4rem; }
+.stat-label { font-family: ui-monospace, 'JetBrains Mono', monospace; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mauve-text); }
+
+.programs { padding-top: 2rem; padding-bottom: 2rem; }
+.programs .door { background: var(--mauve-tint); }
+.programs .door-title { color: var(--mauve-deep); }
+.programs .door-subtitle, .programs .door-link { color: var(--mauve-text); }
+
+.video-embed-wrap { position: relative; padding-top: 56.25%; border-radius: 12px; overflow: hidden; background: var(--ink); }
+.video-embed-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.door .video-embed-wrap { margin-bottom: 1.8rem; }
+
+.video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem 20px; }
+.video-caption { padding-top: 1rem; }
+.video-caption h3 { font-family: 'Bodoni Moda', serif; font-size: 1.15rem; font-weight: 500; color: var(--ink); line-height: 1.3; margin-bottom: 0.2rem; }
+.video-caption p { font-size: 0.85rem; color: var(--ink-faint); }
+
+.cta-wrap { padding: 0 4rem 8rem; max-width: 1300px; margin: 0 auto; }
+.cta-band .cta-text { color: var(--on-ink); margin-bottom: 2rem; }
+.cta-band.cta-mauve .btn-gold { background: var(--mauve-on-ink); color: var(--ink); }
+.cta-band.cta-mauve .btn-gold:hover { background: var(--mauve-tint); }
+
+@media (max-width: 960px) {
+  .perf-section { padding: 4rem 2rem; }
+  .bio-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .video-grid { grid-template-columns: 1fr; }
+  .cta-wrap { padding: 0 2rem 5rem; }
+}
+@media (min-width: 961px) and (max-width: 1200px) {
+  .video-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── FADE IN ── */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">
+    <img src="images/brand/mask-gold.png" alt="" class="nav-brand-mask"/>
+    <img src="images/brand/wordmark-gold.png" alt="Jayme Alilaw" class="nav-brand-wordmark"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="work-with-me.html">Work With Me</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header perf fade-in">
+  <div class="page-header-photo">
+    <img src="images/performance-hero.jpg" alt="Jayme Alilaw"/>
+  </div>
+  <div class="page-header-overlay"></div>
+  <div class="page-header-content">
+    <div class="page-eyebrow">Performance</div>
+    <h1 class="page-title">A voice that tells <em>stories</em></h1>
+    <p class="page-intro">
+      Opera, concert repertoire, Spirituals, and new work by African American composers. Twenty-one years on stage, including a decade as a Resident Artist with The Atlanta Opera.
+    </p>
+    <div class="page-header-actions">
+      <a href="#watch" class="btn btn-gold">Watch &amp; Listen</a>
+      <a href="contact.html" class="btn btn-outline">Book a Performance</a>
+    </div>
+  </div>
+</section>
+
+<!-- BIO -->
+<section class="perf-section" id="bio">
+  <div class="bio-grid">
+    <div class="bio-text fade-in">
+      <div class="section-eyebrow">On stage</div>
+      <h2 class="section-heading">Jayme <em>Alilaw</em></h2>
+      <p>California-born and Atlanta-based, Jayme Alilaw sings across the operatic, classical, and spiritual repertoire. As a Resident Artist with The Atlanta Opera for more than a decade, she sang roles including Susanna in <em>Le Nozze di Figaro</em> and Maria in <em>En Mis Palabras</em>.</p>
+      <p>She champions the music of African American composers, from Florence Price, William Grant Still, and Margaret Bonds to Rosephanye Powell and B.E. Boykin. That commitment shapes every program she builds.</p>
+      <p>An Army veteran with advanced degrees in Vocal Performance, Jayme has performed in opera, concert, and theater across the American South. She is co-founder of Good Soil Production + Management, which produces outdoor concerts, short operas, and multidisciplinary work, including the Good Soil: Garden Gallery Series.</p>
+    </div>
+    <div class="stats fade-in">
+      <div class="stat"><span class="stat-num">21+</span><span class="stat-label">Years performing professionally</span></div>
+      <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Years with The Atlanta Opera</span></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Signature programs</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="offerings programs" id="programs">
+  <div class="section-eyebrow fade-in">Signature programs</div>
+  <h2 class="section-heading fade-in">The <em>work</em></h2>
+  <div class="doors-grid">
+
+    <div class="door fade-in" id="black-lilith-burlesque">
+      <div class="door-number">I</div>
+      <h3 class="door-title">Black Lilith Burlesque</h3>
+      <span class="door-subtitle">One-Woman Show · Recital · Theater</span>
+      <p class="door-desc">An operatic excavation of exile, sovereignty, and shadow. Drawing from Florence Price, Puccini, Rosephanye Powell, William Grant Still, and B.E. Boykin, this work maps the Lilith archetype onto the lived experience of the Black woman: cast out, yet sovereign. Developed through the Reiser Lab Grant and artist residency retreats.</p>
+      <a href="contact.html" class="door-link">Inquire About Booking</a>
+    </div>
+
+    <div class="door fade-in" id="sang-ms-jayme">
+      <div class="door-number">II</div>
+      <h3 class="door-title">Sang Ms. Jayme</h3>
+      <span class="door-subtitle">Theatrical Autobiography · One-Woman Show</span>
+      <p class="door-desc">A theatrical autobiography told through opera, Spirituals, R&amp;B, and rap. From the Army to The Atlanta Opera to spiritual awakening, this is the full arc, sung and spoken. A work about what happens when a woman stops explaining herself and simply becomes who she already was.</p>
+      <a href="contact.html" class="door-link">Inquire About Booking</a>
+    </div>
+
+    <div class="door fade-in" id="la-femme-noire">
+      <div class="door-number">III</div>
+      <h3 class="door-title">La Femme Noire: The Celebrated Woman</h3>
+      <span class="door-subtitle">Concert Program · Educational Residency</span>
+      <p class="door-desc">A multidisciplinary concert celebrating the work of African American women composers, poets, and singers across time. An act of preservation and proclamation, making audible what has been systemically silenced. Available as a concert program or multi-day educational residency.</p>
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/59S4N45xVok" title="La Femme Noire: The Celebrated Woman — Promo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <a href="contact.html" class="door-link">Inquire About Booking</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- WATCH -->
+<section class="perf-section" id="watch">
+  <div class="section-eyebrow fade-in">Recordings</div>
+  <h2 class="section-heading fade-in">Watch &amp; <em>listen</em></h2>
+  <div class="video-grid">
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/Byd0bqhslzo" title="Summertime at St. James Live with Tiffany Goode and the Goode Stuff Experience" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>Summertime at St. James</h3>
+        <p>Live with Tiffany Goode &amp; the Goode Stuff Experience</p>
+      </div>
+    </div>
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/YATMHWQ9V9I" title="Mary, Did You Know?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>Mary, Did You Know?</h3>
+        <p>Buddy Greene &amp; Mark Lowry</p>
+      </div>
+    </div>
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/GNuM1nSCVvU" title="Alice Bolden's Prayer from Buddy Bolden Opera" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>Alice Bolden's Prayer</h3>
+        <p>Buddy Bolden, The Opera · Jeff Crompton</p>
+      </div>
+    </div>
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/U2sLxkVR6_w" title="Night by Florence Price" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>Night</h3>
+        <p>Florence Price</p>
+      </div>
+    </div>
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/_3SngxN842k" title="I Want To Die While You Love Me by Rosephanye Powell" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>I Want To Die While You Love Me</h3>
+        <p>Rosephanye Powell</p>
+      </div>
+    </div>
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/bD1kx94kGUk" title="Dry Bones from Five Creek-Freedman Spirituals: Salute to Margaret Bonds" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>Dry Bones</h3>
+        <p>Five Creek-Freedman Spirituals · Salute to Margaret Bonds</p>
+      </div>
+    </div>
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/IMQNeLeCXlM" title="Moments in Sonder by B.E. Boykin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>Moments in Sonder</h3>
+        <p>B.E. Boykin</p>
+      </div>
+    </div>
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/Eiw8w1Zv0qU" title="Four Songs to Poems by William Blake by Nailah Nombeko" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>Four Songs to Poems by William Blake</h3>
+        <p>Nailah Nombeko</p>
+      </div>
+    </div>
+    <div class="video-card fade-in">
+      <div class="video-embed-wrap"><iframe src="https://www.youtube.com/embed/ASy4TocaSxM" title="Ave Maria: A Very Wintergreen Christmas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="video-caption">
+        <h3>Ave Maria</h3>
+        <p>A Very Wintergreen Christmas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<div class="cta-wrap">
+  <section class="cta-band cta-mauve fade-in">
+    <div class="cta-band-inner">
+      <div class="cta-eyebrow">Booking</div>
+      <h2 class="cta-heading">Bring a program to your stage.</h2>
+      <p class="cta-text">Concerts, recitals, residencies, and collaborations.</p>
+      <a href="contact.html" class="btn btn-gold">Get In Touch</a>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-section" id="contact-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="images/brand/wordmark-gold.png" alt="Jayme Alilaw" style="height:18px; width:auto; display:block; margin-bottom:1.25rem;"/>
+      <p>Where voice, story, and spirit meet — on stage, in coaching, and in community.</p>
+      <p style="margin-top:1rem;">
+        <a href="mailto:info@jayme-alilaw.com" style="color:var(--gold-on-ink); text-decoration:none;">info@jayme-alilaw.com</a>
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work-with-me.html">Work With Me</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <ul>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="https://fromthecorecoaching.com/resonant-voice">The Resonant Voice™</a></li>
+        <li><a href="mailto:info@jayme-alilaw.com">Email Inquiry</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Jayme Alilaw. All Rights Reserved.</p>
+    <p>www.jayme-alilaw.com</p>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
