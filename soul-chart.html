@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Soul Chart Sessions with Jayme Alilaw | Astrology, Human Design &amp; Coaching</title>
+<meta name="description" content="A 90 to 120 minute one-on-one session with coach Jayme Alilaw. Your birth chart, Human Design and tarot, used as reflective tools, so you can decide from your own inner authority. $750, virtual or in person."/>
+<link rel="canonical" href="https://jayme-alilaw.com/soul-chart"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Jayme Alilaw"/>
+<meta property="og:title" content="Soul Chart Sessions with Jayme Alilaw"/>
+<meta property="og:description" content="You did everything right, and it doesn't fit. A 90 to 120 minute session to learn how you're wired and choose your next move."/>
+<meta property="og:url" content="https://jayme-alilaw.com/soul-chart"/>
+<meta property="og:image" content="https://jayme-alilaw.com/images/soul-chart-hero.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Soul Chart Sessions with Jayme Alilaw"/>
+<meta name="twitter:description" content="You did everything right, and it doesn't fit. Learn how you're wired and choose your next move."/>
+<meta name="twitter:image" content="https://jayme-alilaw.com/images/soul-chart-hero.jpg"/>
+
+<link rel="icon" href="images/brand/mask-gold.png" type="image/png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Soul Chart Session",
+      "serviceType": "Coaching session using astrology, Human Design and tarot as reflective tools",
+      "provider": { "@type": "Person", "@id": "https://jayme-alilaw.com/#person", "name": "Jayme Alilaw", "url": "https://jayme-alilaw.com/" },
+      "url": "https://jayme-alilaw.com/soul-chart",
+      "description": "A 90 to 120 minute one-on-one session with coach Jayme Alilaw. Your birth chart, Human Design and tarot, used as reflective tools, so you can decide from your own inner authority. $750, virtual or in person.",
+      "offers": { "@type": "Offer", "price": "750", "priceCurrency": "USD", "url": "https://calendly.com/jaymealilaw/soul-chart-session" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jayme-alilaw.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Soul Chart Sessions", "item": "https://jayme-alilaw.com/soul-chart" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  /* Jayme Alilaw brand system */
+  --gold: #b09048;
+  --gold-text: #7d6428;
+  --gold-tint: #efe4c8;
+  --gold-on-ink: #d3b463;
+  --cream: #f5ead8;
+  --surface: #f9f4ed;
+  --sage: #7a8a5e;
+  --sage-text: #56633f;
+  --sage-deep: #3d472b;
+  --sage-tint: #e1eecc;
+  --sage-on-ink: #aebf92;
+  --mauve: #8f6382;
+  --mauve-text: #714e68;
+  --mauve-deep: #5c3e55;
+  --mauve-tint: #ece0e9;
+  --mauve-on-ink: #b58fac;
+  --ink: #201e1d;
+  --ink-muted: #474238;
+  --ink-faint: #645c50;
+  --label: #82796a;
+  --on-ink: #dcd3c4;
+  --on-ink-label: #a99878;
+  --hairline: rgba(32,30,29,0.16);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Figtree', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: rgba(245,234,216,0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(32,30,29,0.22);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.nav-brand-mask { height: 32px; width: auto; display: block; }
+.nav-brand-wordmark { height: 16px; width: auto; display: block; }
+
+.nav-links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-links a {
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold-text); }
+.nav-links a.current { color: var(--gold-text); }
+
+/* hamburger */
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
+.hamburger span { display:block; width:24px; height:1px; background:var(--ink); transition:0.3s; }
+
+/* ── PAGE HEADER ── */
+.page-header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 12rem 4rem 6rem;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--cream) 45%, var(--gold-tint) 100%);
+}
+
+.page-header-photo {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 27%;
+  max-width: 420px;
+  z-index: 1;
+  border-left: 1px solid rgba(32,30,29,0.25);
+}
+.page-header-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--cream) 0%, transparent 30%);
+  z-index: 2;
+}
+.page-header-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+.page-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(245,234,216,1) 30%, rgba(245,234,216,0.5) 62%, transparent 100%);
+  z-index: 2;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 10;
+  max-width: 640px;
+}
+
+.page-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page-eyebrow::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.page-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 1.75rem;
+  max-width: 16ch;
+}
+.page-title em { color: var(--gold); font-style: italic; }
+
+.page-intro {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  max-width: 56ch;
+}
+
+/* ── CLOSING CTA ── */
+.cta-band {
+  background: var(--ink);
+  border-radius: 16px;
+  padding: 5rem 4rem;
+  text-align: center;
+}
+.cta-band-inner { max-width: 640px; margin: 0 auto; }
+.cta-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-label);
+  margin-bottom: 1rem;
+}
+.cta-heading {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--gold-on-ink);
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
+}
+.cta-band .btn-gold {
+  background: var(--sage-on-ink);
+  color: var(--ink);
+}
+.cta-band .btn-gold:hover { background: var(--sage-tint); }
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-block;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+.btn-gold {
+  background: var(--sage);
+  color: var(--surface);
+}
+.btn-gold:hover { background: var(--sage-deep); }
+.btn-gold:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--hairline);
+  color: var(--ink);
+}
+.btn-outline:hover { border-color: var(--sage); color: var(--sage-text); }
+.btn-outline:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+
+/* ── FOOTER ── */
+.footer-section {
+  background: var(--ink);
+  padding: 5rem 4rem 3rem;
+  border-top: 1px solid rgba(211,180,99,0.18);
+  position: relative;
+  z-index: 10;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(220,211,196,0.1);
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: var(--on-ink);
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  max-width: 32ch;
+}
+
+.footer-col h4 {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-label);
+  margin-bottom: 1.5rem;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.8rem; }
+.footer-col ul a {
+  font-size: 0.9rem;
+  color: var(--on-ink);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col ul a:hover { color: var(--gold-on-ink); }
+
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom p {
+  font-size: 0.7rem;
+  color: rgba(220,211,196,0.35);
+  letter-spacing: 0.05em;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 960px) {
+  nav { padding: 1.2rem 2rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  .page-header { padding: 8rem 2rem 4rem; }
+  .page-header-photo { display: none; }
+  .page-header-overlay { background: none; }
+  .page-header-content { max-width: 100%; }
+  .offerings { padding: 1rem 2rem 5rem; }
+  .doors-grid { grid-template-columns: 1fr; }
+  .cta-band { padding: 4rem 2rem; }
+
+  .footer-top { grid-template-columns: 1fr; gap: 3rem; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  .footer-section { padding: 4rem 2rem 2.5rem; }
+}
+
+/* ── SOUL CHART PAGE ── */
+.page-title { max-width: 19ch; }
+.facts { display:flex; flex-wrap:wrap; gap:0.6rem 1.6rem; margin:2rem 0 2.2rem; font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--sage-text); }
+.facts span + span::before { content:'·'; margin-right:1.6rem; color:var(--label); }
+.hero-actions { display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center; }
+.mobile-photo { display:none; }
+
+.section { max-width: 1100px; margin: 0 auto; padding: 6rem 4rem; }
+.section-narrow { max-width: 780px; }
+.section-label { font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage-text); margin-bottom:1rem; display:flex; align-items:center; gap:1rem; }
+.section-label::before { content:''; width:32px; height:1px; background:var(--sage); }
+.section h2 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:clamp(1.9rem, 3.4vw, 2.7rem); line-height:1.15; color:var(--ink); margin-bottom:1.8rem; max-width:22ch; }
+.section h2 em { color: var(--sage-text); font-style: italic; }
+.section p { font-size:1.05rem; color:var(--ink-muted); margin-bottom:1.2rem; max-width:62ch; }
+
+.for-list { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:1rem; }
+.for-list li { background:var(--sage-tint); border-radius:16px; padding:1.8rem 1.8rem; font-size:1rem; line-height:1.7; color:var(--ink); }
+
+.authority-band { background: var(--surface); border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+.authority-band .pull { font-family:'Bodoni Moda', serif; font-style:italic; font-size:1.35rem; line-height:1.5; color:var(--sage-deep); border-left:2px solid var(--sage); padding-left:1.4rem; margin:2rem 0; max-width:48ch; }
+
+.arc { list-style:none; counter-reset: arc; margin-top:1rem; }
+.arc li { counter-increment: arc; display:grid; grid-template-columns: 4.5rem 1fr; gap:1rem; padding:1.6rem 0; border-bottom:1px solid var(--hairline); }
+.arc li:first-child { border-top:1px solid var(--hairline); }
+.arc li::before { content: counter(arc, decimal-leading-zero); font-family:'Bodoni Moda', serif; font-style:italic; font-size:2rem; color:var(--gold); line-height:1; }
+.arc h3 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:1.3rem; color:var(--sage-deep); margin-bottom:0.3rem; }
+.arc p { margin:0; font-size:1rem; }
+
+.quote { background: var(--sage-deep); color: var(--surface); border-radius:16px; padding:4rem; }
+.quote blockquote { font-family:'Bodoni Moda', serif; font-size:clamp(1.4rem, 2.6vw, 2rem); line-height:1.4; font-weight:400; max-width:30ch; }
+.quote cite { display:block; margin-top:1.6rem; font-style:normal; font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.7rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage-on-ink); }
+
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.card { border:1px solid var(--hairline); border-radius:16px; padding:2.4rem; }
+.card h3 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:1.4rem; margin-bottom:0.8rem; color:var(--ink); }
+.card p { font-size:0.98rem; margin-bottom:1.2rem; }
+.text-link { font-size:0.75rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--sage-text); text-decoration:none; }
+.text-link::after { content:' →'; }
+
+.closing { padding: 0 4rem 7rem; max-width:1300px; margin:0 auto; }
+.cta-note { margin-top:1.4rem; font-size:0.9rem; color:var(--on-ink); }
+.cta-note a { color: var(--gold-on-ink); }
+
+@media (max-width: 960px) {
+  .mobile-photo { display:block; margin:0 0 2rem; border-radius:16px; overflow:hidden; aspect-ratio: 4 / 3; }
+  .mobile-photo img { width:100%; height:100%; object-fit:cover; object-position:50% 22%; display:block; }
+  .section { padding: 4rem 2rem; }
+  .for-list, .two-col { grid-template-columns:1fr; }
+  .quote { padding:2.6rem 2rem; }
+  .closing { padding: 0 2rem 5rem; }
+  .facts span + span::before { margin-right:1rem; }
+  .facts { gap:0.5rem 1rem; }
+}
+@media (max-width: 480px) { .arc li { grid-template-columns: 3rem 1fr; } .arc li::before { font-size:1.6rem; } }
+
+/* ── FADE IN ── */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">
+    <img src="images/brand/mask-gold.png" alt="" class="nav-brand-mask"/>
+    <img src="images/brand/wordmark-gold.png" alt="Jayme Alilaw" class="nav-brand-wordmark"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="work-with-me.html">Work With Me</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-photo">
+    <img src="images/soul-chart-hero.jpg" alt="Jayme Alilaw"/>
+  </div>
+  <div class="page-header-overlay"></div>
+  <div class="page-header-content">
+    <div class="mobile-photo"><img src="images/soul-chart-hero.jpg" alt="Jayme Alilaw"/></div>
+    <div class="page-eyebrow">Soul Chart Sessions · Inner authority</div>
+    <h1 class="page-title">You did everything right, <em>and it doesn't fit.</em></h1>
+    <p class="page-intro">A Soul Chart Session is 90 to 120 minutes, one on one, where I read your birth chart and your Human Design with you as a coach, not a fortune teller. You leave with language for how you're wired and a next move you chose yourself.</p>
+    <div class="facts"><span>90 to 120 minutes</span><span>Virtual or in person</span><span>$750</span></div>
+    <div class="hero-actions">
+      <a href="https://calendly.com/jaymealilaw/soul-chart-session" class="btn btn-gold">Book your session</a>
+      <a href="#what-happens" class="btn btn-outline">What happens</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section fade-in" id="who">
+  <div class="section-label">Who it's for</div>
+  <h2>For people who followed the script well and are <em>quietly done with it.</em></h2>
+  <ul class="for-list">
+    <li>You just got the promotion, or just lost the thing, and neither one feels like yours.</li>
+    <li>You've always felt different, and you're tired of explaining it.</li>
+    <li>People keep telling you what you're good at. You want to know how you're built.</li>
+    <li>You're at a crossroads, a new role, a birthday that lands hard, a Saturn return, and you want to choose the next step on purpose.</li>
+  </ul>
+</section>
+
+<!-- AUTHORITY -->
+<div class="authority-band">
+  <section class="section section-narrow fade-in" id="authority">
+    <div class="section-label">The authority it builds</div>
+    <h2>Inner authority.</h2>
+    <p>Most of us learned to look outside ourselves for permission: the boss, the title, the five-year plan. Inner authority is knowing how you make good decisions, and trusting that enough to act on it.</p>
+    <p class="pull">Human Design even has a name for it. It calls your way of deciding your Authority. I think that's exactly right.</p>
+    <p>This is how I help leaders turn their authenticity into authority, starting from the inside.</p>
+    <p>I use astrology, Human Design and tarot as reflective tools. They don't predict your future. They give us a shared language for your patterns, your timing and your design, and coaching turns that language into a choice.</p>
+  </section>
+</div>
+
+<!-- WHAT HAPPENS -->
+<section class="section section-narrow fade-in" id="what-happens">
+  <div class="section-label">What happens</div>
+  <h2>Five movements, <em>one clear direction.</em></h2>
+  <ol class="arc">
+    <li><div><h3>Your question</h3><p>We start with coaching: what you need clarity on, and what sits underneath it.</p></div></li>
+    <li><div><h3>Your chart as a map</h3><p>I walk you through your chart in plain language, as a map of your patterns, timing and design.</p></div></li>
+    <li><div><h3>What comes up</h3><p>Something usually lands in the middle of the session. We stop and coach it right there.</p></div></li>
+    <li><div><h3>One card</h3><p>A tarot pull to check the direction we've found.</p></div></li>
+    <li><div><h3>Your next move</h3><p>We close with clear next steps. One client called them her marching orders.</p></div></li>
+  </ol>
+</section>
+
+<!-- PROOF -->
+<section class="section fade-in" id="clients">
+  <div class="quote">
+    <blockquote>&ldquo;In two hours, you gave me clear marching orders on how to get things done in my life.&rdquo;</blockquote>
+    <cite>Gwendolyn Kuhlmann · Soul Chart Session client</cite>
+  </div>
+</section>
+
+<!-- WHAT IT ISN'T / TEAMS -->
+<section class="section fade-in" style="padding-top:0">
+  <div class="two-col">
+    <div class="card">
+      <h3>What it isn't</h3>
+      <p>It isn't a psychic reading, and it isn't therapy. I'm an ICF Member Coach, and I keep this work inside a coaching container. You bring the question. You make the call.</p>
+    </div>
+    <div class="card" id="teams">
+      <h3>For teams</h3>
+      <p>I also bring Soul Chart work to leadership teams and retreats. Write to me and we'll shape it to your group.</p>
+      <a href="contact.html" class="text-link">Ask about a team session</a>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<div class="closing">
+<section class="cta-band fade-in">
+  <div class="cta-band-inner">
+    <div class="cta-eyebrow">Soul Chart Session · $750</div>
+    <h2 class="cta-heading">Your design is already yours. Let's put it to work.</h2>
+    <a href="https://calendly.com/jaymealilaw/soul-chart-session" class="btn btn-gold">Book your session</a>
+    <p class="cta-note">Questions first? Email <a href="mailto:info@jayme-alilaw.com">info@jayme-alilaw.com</a>.</p>
+  </div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-section" id="contact-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="images/brand/wordmark-gold.png" alt="Jayme Alilaw" style="height:18px; width:auto; display:block; margin-bottom:1.25rem;"/>
+      <p>Where voice, story, and spirit meet — on stage, in coaching, and in community.</p>
+      <p style="margin-top:1rem;">
+        <a href="mailto:info@jayme-alilaw.com" style="color:var(--gold-on-ink); text-decoration:none;">info@jayme-alilaw.com</a>
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work-with-me.html">Work With Me</a></li>
+        <li><a href="soul-chart.html">Soul Chart Sessions</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <ul>
+        <li><a href="jayme-alilaw-soprano.html">Jayme Alilaw, Soprano</a></li>
+        <li><a href="https://fromthecorecoaching.com/resonant-voice">The Resonant Voice™</a></li>
+        <li><a href="mailto:info@jayme-alilaw.com">Email Inquiry</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Jayme Alilaw. All Rights Reserved.</p>
+    <p>www.jayme-alilaw.com</p>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
