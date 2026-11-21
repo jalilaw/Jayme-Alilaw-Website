@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Resonant Voice™ · Jayme Alilaw's framework for authentic leadership</title>
+<meta name="description" content="Know it. Stand on it. Declare it. The Resonant Voice is Jayme Alilaw's framework of three pillars: the Authentic, Embodied and Empowered Voice."/>
+<link rel="canonical" href="https://jayme-alilaw.com/resonant-voice"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Jayme Alilaw"/>
+<meta property="og:title" content="The Resonant Voice™ · Jayme Alilaw"/>
+<meta property="og:description" content="A voice that is seen, heard and felt. Know it. Stand on it. Declare it."/>
+<meta property="og:url" content="https://jayme-alilaw.com/resonant-voice"/>
+<meta property="og:image" content="https://jayme-alilaw.com/images/about-visionary-2.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="The Resonant Voice™ · Jayme Alilaw"/>
+<meta name="twitter:description" content="A voice that is seen, heard and felt."/>
+<meta name="twitter:image" content="https://jayme-alilaw.com/images/about-visionary-2.jpg"/>
+
+<link rel="icon" href="images/brand/mask-gold.png" type="image/png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "The Resonant Voice",
+      "url": "https://jayme-alilaw.com/resonant-voice",
+      "description": "Jayme Alilaw's framework of three pillars: the Authentic, Embodied and Empowered Voice.",
+      "author": { "@type": "Person", "@id": "https://jayme-alilaw.com/#person", "name": "Jayme Alilaw", "url": "https://jayme-alilaw.com/" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jayme-alilaw.com/" },
+        { "@type": "ListItem", "position": 2, "name": "The Resonant Voice", "item": "https://jayme-alilaw.com/resonant-voice" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  /* Jayme Alilaw brand system */
+  --gold: #b09048;
+  --gold-text: #7d6428;
+  --gold-tint: #efe4c8;
+  --gold-on-ink: #d3b463;
+  --cream: #f5ead8;
+  --surface: #f9f4ed;
+  --sage: #7a8a5e;
+  --sage-text: #56633f;
+  --sage-deep: #3d472b;
+  --sage-tint: #e1eecc;
+  --sage-on-ink: #aebf92;
+  --mauve: #8f6382;
+  --mauve-text: #714e68;
+  --mauve-deep: #5c3e55;
+  --mauve-tint: #ece0e9;
+  --mauve-on-ink: #b58fac;
+  --ink: #201e1d;
+  --ink-muted: #474238;
+  --ink-faint: #645c50;
+  --label: #82796a;
+  --on-ink: #dcd3c4;
+  --on-ink-label: #a99878;
+  --hairline: rgba(32,30,29,0.16);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Figtree', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: rgba(245,234,216,0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(32,30,29,0.22);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.nav-brand-mask { height: 32px; width: auto; display: block; }
+.nav-brand-wordmark { height: 16px; width: auto; display: block; }
+
+.nav-links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-links a {
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold-text); }
+.nav-links a.current { color: var(--gold-text); }
+
+/* hamburger */
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
+.hamburger span { display:block; width:24px; height:1px; background:var(--ink); transition:0.3s; }
+
+/* ── PAGE HEADER ── */
+.page-header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 12rem 4rem 6rem;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--cream) 45%, var(--gold-tint) 100%);
+}
+
+.page-header-photo {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 27%;
+  max-width: 420px;
+  z-index: 1;
+  border-left: 1px solid rgba(32,30,29,0.25);
+}
+.page-header-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--cream) 0%, transparent 30%);
+  z-index: 2;
+}
+.page-header-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+.page-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(245,234,216,1) 30%, rgba(245,234,216,0.5) 62%, transparent 100%);
+  z-index: 2;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 10;
+  max-width: 640px;
+}
+
+.page-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page-eyebrow::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.page-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 1.75rem;
+  max-width: 16ch;
+}
+.page-title em { color: var(--gold); font-style: italic; }
+
+.page-intro {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  max-width: 56ch;
+}
+
+/* ── CLOSING CTA ── */
+.cta-band {
+  background: var(--ink);
+  border-radius: 16px;
+  padding: 5rem 4rem;
+  text-align: center;
+}
+.cta-band-inner { max-width: 640px; margin: 0 auto; }
+.cta-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-label);
+  margin-bottom: 1rem;
+}
+.cta-heading {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--gold-on-ink);
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
+}
+.cta-band .btn-gold {
+  background: var(--sage-on-ink);
+  color: var(--ink);
+}
+.cta-band .btn-gold:hover { background: var(--sage-tint); }
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-block;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+.btn-gold {
+  background: var(--sage);
+  color: var(--surface);
+}
+.btn-gold:hover { background: var(--sage-deep); }
+.btn-gold:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--hairline);
+  color: var(--ink);
+}
+.btn-outline:hover { border-color: var(--sage); color: var(--sage-text); }
+.btn-outline:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+
+/* ── FOOTER ── */
+.footer-section {
+  background: var(--ink);
+  padding: 5rem 4rem 3rem;
+  border-top: 1px solid rgba(211,180,99,0.18);
+  position: relative;
+  z-index: 10;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(220,211,196,0.1);
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: var(--on-ink);
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  max-width: 32ch;
+}
+
+.footer-col h4 {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-label);
+  margin-bottom: 1.5rem;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.8rem; }
+.footer-col ul a {
+  font-size: 0.9rem;
+  color: var(--on-ink);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col ul a:hover { color: var(--gold-on-ink); }
+
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom p {
+  font-size: 0.7rem;
+  color: rgba(220,211,196,0.35);
+  letter-spacing: 0.05em;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 960px) {
+  nav { padding: 1.2rem 2rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  .page-header { padding: 8rem 2rem 4rem; }
+  .page-header-photo { display: none; }
+  .page-header-overlay { background: none; }
+  .page-header-content { max-width: 100%; }
+  .offerings { padding: 1rem 2rem 5rem; }
+  .doors-grid { grid-template-columns: 1fr; }
+  .cta-band { padding: 4rem 2rem; }
+
+  .footer-top { grid-template-columns: 1fr; gap: 3rem; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  .footer-section { padding: 4rem 2rem 2.5rem; }
+}
+
+/* ── SOUL CHART PAGE ── */
+.page-title { max-width: 19ch; }
+.facts { display:flex; flex-wrap:wrap; gap:0.6rem 1.6rem; margin:2rem 0 2.2rem; font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--sage-text); }
+.facts span + span::before { content:'·'; margin-right:1.6rem; color:var(--label); }
+.hero-actions { display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center; }
+.mobile-photo { display:none; }
+
+.section { max-width: 1100px; margin: 0 auto; padding: 6rem 4rem; }
+.section-narrow { max-width: 780px; }
+.section-label { font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage-text); margin-bottom:1rem; display:flex; align-items:center; gap:1rem; }
+.section-label::before { content:''; width:32px; height:1px; background:var(--sage); }
+.section h2 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:clamp(1.9rem, 3.4vw, 2.7rem); line-height:1.15; color:var(--ink); margin-bottom:1.8rem; max-width:22ch; }
+.section h2 em { color: var(--sage-text); font-style: italic; }
+.section p { font-size:1.05rem; color:var(--ink-muted); margin-bottom:1.2rem; max-width:62ch; }
+
+.for-list { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:1rem; }
+.for-list li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.for-list li { background:var(--sage-tint); border-radius:16px; padding:1.8rem 1.8rem; font-size:1rem; line-height:1.7; color:var(--ink); }
+
+.authority-band { background: var(--surface); border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+.authority-band .pull { font-family:'Bodoni Moda', serif; font-style:italic; font-size:1.35rem; line-height:1.5; color:var(--sage-deep); border-left:2px solid var(--sage); padding-left:1.4rem; margin:2rem 0; max-width:48ch; }
+
+.arc { list-style:none; counter-reset: arc; margin-top:1rem; }
+.arc li { counter-increment: arc; display:grid; grid-template-columns: 4.5rem 1fr; gap:1rem; padding:1.6rem 0; border-bottom:1px solid var(--hairline); }
+.arc li:first-child { border-top:1px solid var(--hairline); }
+.arc li::before { content: counter(arc, decimal-leading-zero); font-family:'Bodoni Moda', serif; font-style:italic; font-size:2rem; color:var(--gold); line-height:1; }
+.arc h3 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:1.3rem; color:var(--sage-deep); margin-bottom:0.3rem; }
+.arc p { margin:0; font-size:1rem; }
+
+.quotes { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.quote { background: var(--sage-deep); color: var(--surface); border-radius:16px; padding:3rem; display:flex; flex-direction:column; justify-content:space-between; }
+.quote blockquote { font-family:'Bodoni Moda', serif; font-size:clamp(1.2rem, 1.9vw, 1.5rem); line-height:1.4; font-weight:400; max-width:30ch; }
+.quote cite { display:block; margin-top:1.6rem; font-style:normal; font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.7rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage-on-ink); }
+
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.card { border:1px solid var(--hairline); border-radius:16px; padding:2.4rem; }
+.card h3 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:1.4rem; margin-bottom:0.8rem; color:var(--ink); }
+.card p { font-size:0.98rem; margin-bottom:1.2rem; }
+.text-link { font-size:0.75rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--sage-text); text-decoration:none; }
+.text-link::after { content:' →'; }
+
+.closing { padding: 0 4rem 7rem; max-width:1300px; margin:0 auto; }
+.cta-note { margin-top:1.4rem; font-size:0.9rem; color:var(--on-ink); }
+.cta-note a { color: var(--gold-on-ink); }
+
+@media (max-width: 960px) {
+  .mobile-photo { display:block; margin:0 0 2rem; border-radius:16px; overflow:hidden; aspect-ratio: 4 / 3; }
+  .mobile-photo img { width:100%; height:100%; object-fit:cover; object-position:50% 22%; display:block; }
+  .section { padding: 4rem 2rem; }
+  .for-list, .two-col, .quotes { grid-template-columns:1fr; }
+  .quote { padding:2.6rem 2rem; }
+  .closing { padding: 0 2rem 5rem; }
+  .facts span + span::before { margin-right:1rem; }
+  .facts { gap:0.5rem 1rem; }
+}
+@media (max-width: 480px) { .arc li { grid-template-columns: 3rem 1fr; } .arc li::before { font-size:1.6rem; } }
+
+
+/* ── COACHING PAGE ── */
+.nav-cta { margin-left: 0.4rem; }
+.nav-links a.btn { color: var(--surface); font-size: 0.7rem; padding: 0.6rem 1.1rem; }
+.nav-links a.btn:hover { color: var(--surface); }
+#clients h2 { max-width: 30ch; }
+.quotes-3 { grid-template-columns: repeat(3, 1fr); }
+.quotes-3 .quote { padding: 2.4rem; }
+.quotes-3 .quote blockquote { font-size: clamp(1.1rem, 1.6vw, 1.3rem); }
+.names { font-family:'Bodoni Moda', serif; font-size: clamp(1.1rem, 2vw, 1.35rem); line-height:1.7; color: var(--ink); max-width: 64ch; margin-bottom: 3rem; }
+.names span + span::before { content:'·'; margin:0 0.7rem; color: var(--gold); }
+.credential { font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color: var(--gold-text); margin-top: 2.4rem; }
+.faq { list-style:none; }
+.faq li { padding:1.1rem 0; border-bottom:1px solid var(--hairline); }
+.faq li:first-child { border-top:1px solid var(--hairline); }
+.card .faq h3 { font-size:1.05rem; margin-bottom:0.2rem; }
+.card .faq p { margin:0; font-size:0.95rem; }
+.activism { background: var(--ink); border-top: 1px solid rgba(211,180,99,0.18); padding: 2.4rem 4rem; text-align: center; font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 1.15rem; color: var(--gold-on-ink); }
+.footer-section { border-top: 1px solid rgba(220,211,196,0.08); }
+.coming-soon { font-size: 0.85rem; color: var(--on-ink-label); }
+@media (max-width: 960px) {
+  .nav-links { position:absolute; top:100%; left:0; right:0; flex-direction:column; gap:1.2rem; padding:1.6rem 2rem; background:var(--cream); border-bottom:1px solid var(--hairline); }
+  .quotes-3 { grid-template-columns: 1fr; }
+  .activism { padding: 2rem; }
+}
+
+/* ── FADE IN ── */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+}
+
+/* ── RESONANT VOICE PAGE ── */
+.page-header-photo img { object-position: 50% 20%; }
+.resonance { font-family:'Bodoni Moda', serif; font-size:clamp(1.25rem, 2.2vw, 1.6rem); line-height:1.5; color:var(--ink); max-width:46ch; }
+.pillars { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; margin-top:1rem; }
+.pillar { border:1px solid var(--hairline); border-radius:16px; padding:2.4rem 2.2rem; display:flex; flex-direction:column; background:var(--surface); }
+.pillar-num { font-family:'Bodoni Moda', serif; font-style:italic; font-size:2.2rem; color:var(--gold); line-height:1; margin-bottom:1.2rem; }
+.pillar h3 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:1.5rem; color:var(--ink); line-height:1.2; }
+.pillar-verb { font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.7rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage-text); margin:0.7rem 0 1.4rem; }
+.pillar-q { font-family:'Bodoni Moda', serif; font-style:italic; font-size:1.15rem; color:var(--sage-deep); margin-bottom:1rem; }
+.section .pillar p { font-size:0.97rem; margin-bottom:1rem; }
+.pillar-work { border-top:1px solid var(--hairline); padding-top:1rem; }
+.pillar-work strong { display:block; font-family: ui-monospace, 'JetBrains Mono', monospace; font-weight:400; font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--label); margin-bottom:0.3rem; }
+.mantra { margin-top:auto; padding-top:1.2rem; font-family:'Bodoni Moda', serif; font-style:italic; font-size:1.1rem; line-height:1.45; color:var(--gold-text); }
+.doors { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:1rem; }
+.doors a { display:block; height:100%; background:var(--sage-tint); border-radius:16px; padding:1.8rem; text-decoration:none; color:var(--ink); transition:transform .2s ease; }
+.doors a:hover { transform:translateY(-2px); }
+.doors h3 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:1.3rem; margin-bottom:0.4rem; color:var(--sage-deep); }
+.doors p { font-size:0.98rem; line-height:1.65; color:var(--ink-muted); margin:0; }
+@media (max-width: 960px) {
+  .pillars, .doors { grid-template-columns:1fr; }
+  .pillar { padding:2rem 1.6rem; }
+}
+</style>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">
+    <img src="images/brand/mask-gold.png" alt="" class="nav-brand-mask"/>
+    <img src="images/brand/wordmark-gold.png" alt="Jayme Alilaw" class="nav-brand-wordmark"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="work-with-me.html">Work With Me</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="nav-cta"><a href="https://calendly.com/jaymealilaw/chemistry-session" class="btn btn-gold">Book a chemistry call</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-photo">
+    <img src="images/about-visionary-2.jpg" alt="Jayme Alilaw"/>
+  </div>
+  <div class="page-header-overlay"></div>
+  <div class="page-header-content">
+    <div class="mobile-photo"><img src="images/about-visionary-2.jpg" alt="Jayme Alilaw"/></div>
+    <div class="page-eyebrow">The Resonant Voice™ · My framework</div>
+    <h1 class="page-title">A voice that is <em>seen, heard and felt.</em></h1>
+    <p class="page-intro">The Resonant Voice is the framework under everything I do: how I coach, read a chart, speak, write and perform. Three pillars: Know it. Stand on it. Declare it.</p>
+    <div class="hero-actions">
+      <a href="#pillars" class="btn btn-gold">See the three pillars</a>
+      <a href="https://jaymealilaw.substack.com/" class="btn btn-outline">Read The Resonant Voice</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT RESONANCE IS -->
+<div class="authority-band">
+  <section class="section section-narrow fade-in" id="resonance">
+    <div class="section-label">What resonance is</div>
+    <h2>Resonance is more than volume.</h2>
+    <p class="resonance">It is the undeniable presence that comes from being deeply connected to one's truth, and amplifying that truth in a way that naturally draws others in. It carries strength, clarity, and lasting influence. A resonant voice is not just heard. It creates vibrations that shift spaces, impacts those it encounters, and is sustained with intention and authenticity.</p>
+  </section>
+</div>
+
+<!-- ORIGIN -->
+<section class="section section-narrow fade-in" id="origin">
+  <div class="section-label">Where it came from</div>
+  <h2>It started in the <em>practice room.</em></h2>
+  <p>I built this over more than two decades as an opera singer, vocal coach and leadership coach. For years, these parts of me felt disconnected, like mismatched pieces of a puzzle. It wasn't until I learned to ground myself in my values and lead from my truth that the picture came into focus.</p>
+  <p>The voice is still where I learn. What I find in the practice room and the voice studio shows up later in a coaching session, a chart reading or an essay.</p>
+  <p>I don't offer my path as a model to follow. I live as specifically as I can as myself, so the work can move you toward your own equally specific truth.</p>
+</section>
+
+<!-- PILLARS -->
+<section class="section fade-in" id="pillars" style="padding-top:0">
+  <div class="section-label">The three pillars</div>
+  <h2>Know it. Stand on it. <em>Declare it.</em></h2>
+  <div class="pillars">
+    <article class="pillar">
+      <div class="pillar-num">I</div>
+      <h3>The Authentic Voice</h3>
+      <div class="pillar-verb">Know it · Who I Am</div>
+      <p class="pillar-q">What are you made of?</p>
+      <p>Authenticity is not performance, it is recognition. The authentic voice grows according to its own range and capacity, anchored in values that don't shift with moods or seasons. This pillar is about uncovering what you are made of, so that everything you create, say, and lead flows from that place.</p>
+      <p class="pillar-work"><strong>The work</strong>Naming your core values as operational anchors, not aspirational labels. Values that stay constant when feelings shift.</p>
+      <p class="mantra">I am who I am at my core. I grow according to my own capacity. Know it.</p>
+    </article>
+    <article class="pillar">
+      <div class="pillar-num">II</div>
+      <h3>The Embodied Voice</h3>
+      <div class="pillar-verb">Stand on it · The Shape of Me</div>
+      <p class="pillar-q">Where do you begin and end?</p>
+      <p>Embodiment is the practice of being in tune with body, mind, and creation. It is fortified by healthy boundaries, not walls, but the structures that maintain the integrity of your being. This pillar is about knowing where you begin and end, so that your presence has shape and your work has form.</p>
+      <p class="pillar-work"><strong>The work</strong>Boundaries as structure. When we are clear on who we are and what we are about, we are free to choose and to not choose.</p>
+      <p class="mantra">In tune with body, mind, and creation. Fortified by boundaries. Stand on it.</p>
+    </article>
+    <article class="pillar">
+      <div class="pillar-num">III</div>
+      <h3>The Empowered Voice</h3>
+      <div class="pillar-verb">Declare it · Self Authority as Leadership</div>
+      <p class="pillar-q">Where does your authority come from?</p>
+      <p>Empowerment is internally sourced and outwardly expressed. It is the capacity to lead from within, to declare your truth, set direction, and inspire others not from a title or permission granted externally, but from deep recognition of your own authority.</p>
+      <p class="pillar-work"><strong>The work</strong>Locating your authority inside yourself, not in a title or someone's permission. Then using it: declaring what's true for you, setting direction and leading others from there.</p>
+      <p class="mantra">Internally powered. Externally expressed. Declare it.</p>
+    </article>
+  </div>
+</section>
+
+<!-- WHERE YOU'LL FIND IT -->
+<section class="section fade-in" id="doors" style="padding-top:0">
+  <div class="section-label">Where you'll find it</div>
+  <h2>The method under <em>every door</em></h2>
+  <p>You meet The Resonant Voice inside the work.</p>
+  <ul class="doors">
+    <li><a href="coaching.html"><h3>Leadership Coaching</h3><p>Weekly one-on-one coaching for leaders who earned the seat.</p></a></li>
+    <li><a href="soul-chart.html"><h3>Soul Chart Sessions</h3><p>Language for how you're built.</p></a></li>
+    <li><a href="contact.html"><h3>Talks and workshops</h3><p>The format behind my three talks: Authenticity into Authority, The Promotion Gap and Courageous Leadership.</p></a></li>
+    <li><a href="https://jaymealilaw.substack.com/"><h3>The newsletter</h3><p>Every Monday essay builds the framework a little further.</p></a></li>
+  </ul>
+</section>
+
+<!-- CLOSING CTA -->
+<div class="closing">
+<section class="cta-band fade-in">
+  <div class="cta-band-inner">
+    <div class="cta-eyebrow">Free 20-minute chemistry call</div>
+    <h2 class="cta-heading">Start with a conversation.</h2>
+    <a href="https://calendly.com/jaymealilaw/chemistry-session" class="btn btn-gold">Book a chemistry call</a>
+    <p class="cta-note">Want it for your team? <a href="contact.html">Ask about a workshop</a>.</p>
+  </div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-section" id="contact-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="images/brand/wordmark-gold.png" alt="Jayme Alilaw" style="height:18px; width:auto; display:block; margin-bottom:1.25rem;"/>
+      <p>I help leaders turn their authenticity into authority.</p>
+      <p style="margin-top:1rem;">
+        <a href="mailto:info@jayme-alilaw.com" style="color:var(--gold-on-ink); text-decoration:none;">info@jayme-alilaw.com</a>
+      </p>
+      <p class="coming-soon">Coming soon: Here's The Thing with Jayme Alilaw</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work-with-me.html">Work With Me</a></li>
+        <li><a href="coaching.html">Leadership Coaching</a></li>
+        <li><a href="soul-chart.html">Soul Chart Sessions</a></li>
+        <li><a href="readings.html">Astrology Readings</a></li>
+        <li><a href="resonant-voice.html">The Resonant Voice</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/jaymealilaw/">LinkedIn</a></li>
+        <li><a href="https://instagram.com/sangmsjayme">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@sangmsjayme">YouTube</a></li>
+        <li><a href="https://jaymealilaw.substack.com/">Substack</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 From The Core Coaching, LLC. All Rights Reserved.</p>
+    <p>www.jayme-alilaw.com</p>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
