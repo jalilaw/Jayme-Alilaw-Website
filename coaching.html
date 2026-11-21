@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Leadership Coaching with Jayme Alilaw · Executive Coach for New Leaders</title>
+<meta name="description" content="Weekly one-on-one coaching for newly promoted leaders. You earned the seat. Now own the room. Book a chemistry call with ICF Member Coach Jayme Alilaw."/>
+<link rel="canonical" href="https://jayme-alilaw.com/coaching"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Jayme Alilaw"/>
+<meta property="og:title" content="Leadership Coaching with Jayme Alilaw"/>
+<meta property="og:description" content="Stop performing your authority. Start living in it. Weekly one-on-one coaching for newly promoted leaders."/>
+<meta property="og:url" content="https://jayme-alilaw.com/coaching"/>
+<meta property="og:image" content="https://jayme-alilaw.com/images/work-with-me-hero.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Leadership Coaching with Jayme Alilaw"/>
+<meta name="twitter:description" content="Stop performing your authority. Start living in it."/>
+<meta name="twitter:image" content="https://jayme-alilaw.com/images/work-with-me-hero.jpg"/>
+
+<link rel="icon" href="images/brand/mask-gold.png" type="image/png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Leadership Coaching",
+      "serviceType": "Executive and leadership coaching",
+      "provider": { "@type": "Person", "@id": "https://jayme-alilaw.com/#person", "name": "Jayme Alilaw", "url": "https://jayme-alilaw.com/" },
+      "url": "https://jayme-alilaw.com/coaching",
+      "description": "Weekly one-on-one coaching for newly promoted leaders, with ICF Member Coach Jayme Alilaw."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jayme-alilaw.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Leadership Coaching", "item": "https://jayme-alilaw.com/coaching" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  /* Jayme Alilaw brand system */
+  --gold: #b09048;
+  --gold-text: #7d6428;
+  --gold-tint: #efe4c8;
+  --gold-on-ink: #d3b463;
+  --cream: #f5ead8;
+  --surface: #f9f4ed;
+  --sage: #7a8a5e;
+  --sage-text: #56633f;
+  --sage-deep: #3d472b;
+  --sage-tint: #e1eecc;
+  --sage-on-ink: #aebf92;
+  --mauve: #8f6382;
+  --mauve-text: #714e68;
+  --mauve-deep: #5c3e55;
+  --mauve-tint: #ece0e9;
+  --mauve-on-ink: #b58fac;
+  --ink: #201e1d;
+  --ink-muted: #474238;
+  --ink-faint: #645c50;
+  --label: #82796a;
+  --on-ink: #dcd3c4;
+  --on-ink-label: #a99878;
+  --hairline: rgba(32,30,29,0.16);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Figtree', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: rgba(245,234,216,0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(32,30,29,0.22);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+.nav-brand-mask { height: 32px; width: auto; display: block; }
+.nav-brand-wordmark { height: 16px; width: auto; display: block; }
+
+.nav-links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-links a {
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold-text); }
+.nav-links a.current { color: var(--gold-text); }
+
+/* hamburger */
+.hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
+.hamburger span { display:block; width:24px; height:1px; background:var(--ink); transition:0.3s; }
+
+/* ── PAGE HEADER ── */
+.page-header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 12rem 4rem 6rem;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--cream) 45%, var(--gold-tint) 100%);
+}
+
+.page-header-photo {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 27%;
+  max-width: 420px;
+  z-index: 1;
+  border-left: 1px solid rgba(32,30,29,0.25);
+}
+.page-header-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--cream) 0%, transparent 30%);
+  z-index: 2;
+}
+.page-header-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+.page-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(245,234,216,1) 30%, rgba(245,234,216,0.5) 62%, transparent 100%);
+  z-index: 2;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 10;
+  max-width: 640px;
+}
+
+.page-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page-eyebrow::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.page-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 1.75rem;
+  max-width: 16ch;
+}
+.page-title em { color: var(--gold); font-style: italic; }
+
+.page-intro {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  max-width: 56ch;
+}
+
+/* ── CLOSING CTA ── */
+.cta-band {
+  background: var(--ink);
+  border-radius: 16px;
+  padding: 5rem 4rem;
+  text-align: center;
+}
+.cta-band-inner { max-width: 640px; margin: 0 auto; }
+.cta-eyebrow {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-label);
+  margin-bottom: 1rem;
+}
+.cta-heading {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  color: var(--gold-on-ink);
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
+}
+.cta-band .btn-gold {
+  background: var(--sage-on-ink);
+  color: var(--ink);
+}
+.cta-band .btn-gold:hover { background: var(--sage-tint); }
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-block;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+.btn-gold {
+  background: var(--sage);
+  color: var(--surface);
+}
+.btn-gold:hover { background: var(--sage-deep); }
+.btn-gold:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--hairline);
+  color: var(--ink);
+}
+.btn-outline:hover { border-color: var(--sage); color: var(--sage-text); }
+.btn-outline:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+
+/* ── FOOTER ── */
+.footer-section {
+  background: var(--ink);
+  padding: 5rem 4rem 3rem;
+  border-top: 1px solid rgba(211,180,99,0.18);
+  position: relative;
+  z-index: 10;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(220,211,196,0.1);
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: var(--on-ink);
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  max-width: 32ch;
+}
+
+.footer-col h4 {
+  font-family: ui-monospace, 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-ink-label);
+  margin-bottom: 1.5rem;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.8rem; }
+.footer-col ul a {
+  font-size: 0.9rem;
+  color: var(--on-ink);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col ul a:hover { color: var(--gold-on-ink); }
+
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom p {
+  font-size: 0.7rem;
+  color: rgba(220,211,196,0.35);
+  letter-spacing: 0.05em;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 960px) {
+  nav { padding: 1.2rem 2rem; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  .page-header { padding: 8rem 2rem 4rem; }
+  .page-header-photo { display: none; }
+  .page-header-overlay { background: none; }
+  .page-header-content { max-width: 100%; }
+  .offerings { padding: 1rem 2rem 5rem; }
+  .doors-grid { grid-template-columns: 1fr; }
+  .cta-band { padding: 4rem 2rem; }
+
+  .footer-top { grid-template-columns: 1fr; gap: 3rem; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  .footer-section { padding: 4rem 2rem 2.5rem; }
+}
+
+/* ── SOUL CHART PAGE ── */
+.page-title { max-width: 19ch; }
+.facts { display:flex; flex-wrap:wrap; gap:0.6rem 1.6rem; margin:2rem 0 2.2rem; font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--sage-text); }
+.facts span + span::before { content:'·'; margin-right:1.6rem; color:var(--label); }
+.hero-actions { display:flex; flex-wrap:wrap; gap:0.8rem; align-items:center; }
+.mobile-photo { display:none; }
+
+.section { max-width: 1100px; margin: 0 auto; padding: 6rem 4rem; }
+.section-narrow { max-width: 780px; }
+.section-label { font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage-text); margin-bottom:1rem; display:flex; align-items:center; gap:1rem; }
+.section-label::before { content:''; width:32px; height:1px; background:var(--sage); }
+.section h2 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:clamp(1.9rem, 3.4vw, 2.7rem); line-height:1.15; color:var(--ink); margin-bottom:1.8rem; max-width:22ch; }
+.section h2 em { color: var(--sage-text); font-style: italic; }
+.section p { font-size:1.05rem; color:var(--ink-muted); margin-bottom:1.2rem; max-width:62ch; }
+
+.for-list { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:1rem; }
+.for-list li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.for-list li { background:var(--sage-tint); border-radius:16px; padding:1.8rem 1.8rem; font-size:1rem; line-height:1.7; color:var(--ink); }
+
+.authority-band { background: var(--surface); border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+.authority-band .pull { font-family:'Bodoni Moda', serif; font-style:italic; font-size:1.35rem; line-height:1.5; color:var(--sage-deep); border-left:2px solid var(--sage); padding-left:1.4rem; margin:2rem 0; max-width:48ch; }
+
+.arc { list-style:none; counter-reset: arc; margin-top:1rem; }
+.arc li { counter-increment: arc; display:grid; grid-template-columns: 4.5rem 1fr; gap:1rem; padding:1.6rem 0; border-bottom:1px solid var(--hairline); }
+.arc li:first-child { border-top:1px solid var(--hairline); }
+.arc li::before { content: counter(arc, decimal-leading-zero); font-family:'Bodoni Moda', serif; font-style:italic; font-size:2rem; color:var(--gold); line-height:1; }
+.arc h3 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:1.3rem; color:var(--sage-deep); margin-bottom:0.3rem; }
+.arc p { margin:0; font-size:1rem; }
+
+.quotes { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.quote { background: var(--sage-deep); color: var(--surface); border-radius:16px; padding:3rem; display:flex; flex-direction:column; justify-content:space-between; }
+.quote blockquote { font-family:'Bodoni Moda', serif; font-size:clamp(1.2rem, 1.9vw, 1.5rem); line-height:1.4; font-weight:400; max-width:30ch; }
+.quote cite { display:block; margin-top:1.6rem; font-style:normal; font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.7rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage-on-ink); }
+
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.card { border:1px solid var(--hairline); border-radius:16px; padding:2.4rem; }
+.card h3 { font-family:'Bodoni Moda', serif; font-weight:500; font-size:1.4rem; margin-bottom:0.8rem; color:var(--ink); }
+.card p { font-size:0.98rem; margin-bottom:1.2rem; }
+.text-link { font-size:0.75rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--sage-text); text-decoration:none; }
+.text-link::after { content:' →'; }
+
+.closing { padding: 0 4rem 7rem; max-width:1300px; margin:0 auto; }
+.cta-note { margin-top:1.4rem; font-size:0.9rem; color:var(--on-ink); }
+.cta-note a { color: var(--gold-on-ink); }
+
+@media (max-width: 960px) {
+  .mobile-photo { display:block; margin:0 0 2rem; border-radius:16px; overflow:hidden; aspect-ratio: 4 / 3; }
+  .mobile-photo img { width:100%; height:100%; object-fit:cover; object-position:50% 22%; display:block; }
+  .section { padding: 4rem 2rem; }
+  .for-list, .two-col, .quotes { grid-template-columns:1fr; }
+  .quote { padding:2.6rem 2rem; }
+  .closing { padding: 0 2rem 5rem; }
+  .facts span + span::before { margin-right:1rem; }
+  .facts { gap:0.5rem 1rem; }
+}
+@media (max-width: 480px) { .arc li { grid-template-columns: 3rem 1fr; } .arc li::before { font-size:1.6rem; } }
+
+
+/* ── COACHING PAGE ── */
+.nav-cta { margin-left: 0.4rem; }
+.nav-links a.btn { color: var(--surface); font-size: 0.7rem; padding: 0.6rem 1.1rem; }
+.nav-links a.btn:hover { color: var(--surface); }
+#clients h2 { max-width: 30ch; }
+.quotes-3 { grid-template-columns: repeat(3, 1fr); }
+.quotes-3 .quote { padding: 2.4rem; }
+.quotes-3 .quote blockquote { font-size: clamp(1.1rem, 1.6vw, 1.3rem); }
+.names { font-family:'Bodoni Moda', serif; font-size: clamp(1.1rem, 2vw, 1.35rem); line-height:1.7; color: var(--ink); max-width: 64ch; margin-bottom: 3rem; }
+.names span + span::before { content:'·'; margin:0 0.7rem; color: var(--gold); }
+.credential { font-family: ui-monospace, 'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color: var(--gold-text); margin-top: 2.4rem; }
+.faq { list-style:none; }
+.faq li { padding:1.1rem 0; border-bottom:1px solid var(--hairline); }
+.faq li:first-child { border-top:1px solid var(--hairline); }
+.card .faq h3 { font-size:1.05rem; margin-bottom:0.2rem; }
+.card .faq p { margin:0; font-size:0.95rem; }
+.activism { background: var(--ink); border-top: 1px solid rgba(211,180,99,0.18); padding: 2.4rem 4rem; text-align: center; font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 1.15rem; color: var(--gold-on-ink); }
+.footer-section { border-top: 1px solid rgba(220,211,196,0.08); }
+.coming-soon { font-size: 0.85rem; color: var(--on-ink-label); }
+@media (max-width: 960px) {
+  .nav-links { position:absolute; top:100%; left:0; right:0; flex-direction:column; gap:1.2rem; padding:1.6rem 2rem; background:var(--cream); border-bottom:1px solid var(--hairline); }
+  .quotes-3 { grid-template-columns: 1fr; }
+  .activism { padding: 2rem; }
+}
+
+.inline-link { color: var(--sage-text); text-underline-offset: 3px; }
+
+/* ── FADE IN ── */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">
+    <img src="images/brand/mask-gold.png" alt="" class="nav-brand-mask"/>
+    <img src="images/brand/wordmark-gold.png" alt="Jayme Alilaw" class="nav-brand-wordmark"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="speaking.html">Speaking</a></li>
+    <li><a href="https://jaymealilaw.substack.com/">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="nav-cta"><a href="https://calendly.com/jaymealilaw/chemistry-session" class="btn btn-gold">Book a chemistry call</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-photo">
+    <img src="images/work-with-me-hero.jpg" alt="Jayme Alilaw"/>
+  </div>
+  <div class="page-header-overlay"></div>
+  <div class="page-header-content">
+    <div class="mobile-photo"><img src="images/work-with-me-hero.jpg" alt="Jayme Alilaw"/></div>
+    <div class="page-eyebrow">Leadership Coaching · Positional authority</div>
+    <h1 class="page-title">Stop performing your authority. <em>Start living in it.</em></h1>
+    <p class="page-intro">You earned the seat and still feel like you're performing. I coach newly promoted leaders, and the ones still waiting on the title they've earned, to lead in their own voice.</p>
+    <div class="facts"><span>Weekly</span><span>60 minutes</span><span>One on one</span></div>
+    <div class="hero-actions">
+      <a href="https://calendly.com/jaymealilaw/chemistry-session" class="btn btn-gold">Book a chemistry call</a>
+      <a href="#how" class="btn btn-outline">How it works</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section fade-in" id="who">
+  <div class="section-label">Who it's for</div>
+  <h2>For leaders who got the title and are <em>still waiting to feel it.</em></h2>
+  <ul class="for-list">
+    <li>You were promoted to director or above, and the room still treats you like the person you used to be.</li>
+    <li>You rehearse every sentence before the meeting and replay it after.</li>
+    <li>You've been doing the bigger job for a year without the title, and you're tired of waiting to be noticed.</li>
+    <li>You're the only one at the table who looks or sounds like you, and you've been editing yourself to fit.</li>
+    <li>You want your pay, your title and your relationships at work to match what you can actually do.</li>
+  </ul>
+</section>
+
+<!-- AUTHORITY -->
+<div class="authority-band">
+  <section class="section section-narrow fade-in" id="authority">
+    <div class="section-label">The authority it builds</div>
+    <h2>Positional authority.</h2>
+    <p>Positional authority comes with the seat: the title, the budget, the decisions with your name on them. Most new leaders get the title before they feel the authority. They keep waiting for permission that already came with the job.</p>
+    <p>Coaching closes that gap. We work on how you speak, decide and hold a room, until the authority on the org chart and the authority people feel from you are the same thing.</p>
+    <p>The work rests on my framework, <a href="resonant-voice.html" class="inline-link">The Resonant Voice</a>: an authentic, embodied and empowered voice.</p>
+  </section>
+</div>
+
+<!-- HOW WE WORK -->
+<section class="section section-narrow fade-in" id="how">
+  <div class="section-label">What happens</div>
+  <h2>How we work</h2>
+  <ol class="arc">
+    <li><div><h3>A chemistry call</h3><p>A free 20-minute call to see if we fit. You tell me what's going on, and I tell you honestly whether I'm the right coach for it.</p></div></li>
+    <li><div><h3>Weekly sessions</h3><p>Sixty minutes, one on one. We start with what's live that week: the meeting, the conversation, the decision you keep putting off.</p></div></li>
+    <li><div><h3>New awareness</h3><p>We get clear on what's in the way of where you want to go. Most of it is hard to see from the inside. Once you can name it, you can move past it.</p></div></li>
+    <li><div><h3>A plan that's yours</h3><p>Together we build a plan around your goals, your life, and the way you actually work.</p></div></li>
+    <li><div><h3>Between sessions</h3><p>The work happens outside of session. When something comes up midweek, you can reach me.</p></div></li>
+  </ol>
+</section>
+
+<!-- PROOF -->
+<section class="section fade-in" id="clients">
+  <div class="section-label">Proof</div>
+  <h2>Leaders and teams I've worked with</h2>
+  <p class="names"><span>Kaiser Permanente</span><span>Wells Fargo</span><span>Lincoln Center</span><span>Doris Duke Foundation</span><span>Sandy Hook Promise</span><span>Kennesaw State</span><span>J.Crew Factory</span></p>
+  <div class="quotes quotes-3">
+    <div class="quote">
+      <blockquote>&ldquo;Jayme, more than anyone I&rsquo;ve met, helped me pick apart the mess of thoughts in my head and find clarity and calm. After only one session, I&rsquo;m back in touch with my instincts and have an actionable plan to move towards my goal.&rdquo;</blockquote>
+      <cite>Julia Aks · Oscar-nominated actor and director</cite>
+    </div>
+    <div class="quote">
+      <blockquote>&ldquo;Jayme has the uncanny ability to ask the one question that can open the door to so many revelations about myself.&rdquo;</blockquote>
+      <cite>Kayli Klass · Senior Operations Leader</cite>
+    </div>
+    <div class="quote">
+      <blockquote>&ldquo;Through her coaching, I have seen so many breakthroughs professionally and personally in my life. Professional, talented and kind, she is a voice of truth in a complex and changing world.&rdquo;</blockquote>
+      <cite>Scott Paviol, MD · Board Certified Dermatologist</cite>
+    </div>
+  </div>
+  <p class="credential">ICF Member Coach · U.S. Army veteran · 21+ years on professional stages</p>
+</section>
+
+<!-- FOR COMPANIES + QUESTIONS -->
+<section class="section fade-in" style="padding-top:0">
+  <div class="two-col">
+    <div class="card" id="companies">
+      <h3>Coaching for your leaders</h3>
+      <p>Many of my clients' companies pay for their coaching. If you lead HR or learning and development and want coaching for a new leader on your team, write to me and we'll set it up together.</p>
+      <a href="contact.html" class="text-link">Ask about coaching for your team</a>
+    </div>
+    <div class="card" id="questions">
+      <h3>Questions</h3>
+      <ul class="faq">
+        <li><h3>What does it cost?</h3><p>We talk about investment on the chemistry call, once we both know it's a fit.</p></li>
+        <li><h3>Can my company pay for it?</h3><p>Yes. Many of my clients' companies have.</p></li>
+        <li><h3>How long do people work with you?</h3><p>We decide that together on the chemistry call.</p></li>
+        <li><h3>Is this therapy?</h3><p>No. I'm an ICF Member Coach. Coaching looks forward, at what you want to do next.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<div class="closing">
+<section class="cta-band fade-in">
+  <div class="cta-band-inner">
+    <div class="cta-eyebrow">Free 20-minute chemistry call</div>
+    <h2 class="cta-heading">You already have the seat. Let's make it yours.</h2>
+    <a href="https://calendly.com/jaymealilaw/chemistry-session" class="btn btn-gold">Book a chemistry call</a>
+    <p class="cta-note">Questions first? Email <a href="mailto:coaching@jayme-alilaw.com">coaching@jayme-alilaw.com</a>.</p>
+  </div>
+</section>
+</div>
+
+<!-- ACTIVISM LINE -->
+<div class="activism">Every voice belongs in the room. I use mine for the people who were taught to stay quiet.</div>
+
+<!-- FOOTER -->
+<footer class="footer-section" id="contact-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="images/brand/wordmark-gold.png" alt="Jayme Alilaw" style="height:18px; width:auto; display:block; margin-bottom:1.25rem;"/>
+      <p>I help leaders turn their authenticity into authority.</p>
+      <p style="margin-top:1rem;">
+        <a href="mailto:info@jayme-alilaw.com" style="color:var(--gold-on-ink); text-decoration:none;">info@jayme-alilaw.com</a>
+      </p>
+      <p class="coming-soon">Coming soon: Here's The Thing with Jayme Alilaw</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="coaching.html">Leadership Coaching</a></li>
+        <li><a href="soul-chart.html">Soul Chart Sessions</a></li>
+        <li><a href="readings.html">Astrology Readings</a></li>
+        <li><a href="resonant-voice.html">The Resonant Voice</a></li>
+        <li><a href="https://jaymealilaw.substack.com/">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/jaymealilaw/">LinkedIn</a></li>
+        <li><a href="https://instagram.com/sangmsjayme">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@sangmsjayme">YouTube</a></li>
+        <li><a href="https://jaymealilaw.substack.com/">Substack</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 From The Core Coaching, LLC. All Rights Reserved.</p>
+    <p>www.jayme-alilaw.com</p>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
